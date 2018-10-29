@@ -18,6 +18,8 @@
 
 %\abstract{asdf}
 
+\section{Historical Context}
+
 In Summer 1967, Lynn Steen and J. Arthur Seebach, Jr. gathered together
 an REU of five students to canvas the field of topology and create
 a compilation of topological spaces, properties, and theorems.
@@ -25,6 +27,17 @@ The result of this work was \textit{Counterexamples in Topology}
 \cite{MR1382863}, which went on to inspire several other texts
 with the same goal of modeling the objects, properties, and theorems of
 their fields \cite{MR0491272,MR1113487,MR930671,MR1256489}.
+
+In the spirit of these works,
+we propose a web application that can power modern versions
+of such \textit{Counterexamples} texts, extending far beyond the scope
+of any printed book. This project, which we call the pi-Base, is based 
+on general principles that apply to multiple areas of mathematics.
+We see the pi-Base as the next logical step beyond the textbooks
+and wikis that currently fill this need for cataloging mathematical
+objects studied in the literature.
+
+\section{About the pi-Base}
 
 The pi-Base (\url{http://pi-base.org}) is a community-curated
 database of topological spaces, properties, and theorems, 
@@ -41,7 +54,9 @@ asserts that all paracompact Hausdorff spaces are fully \(T_4\).
 As a result, a space such as
 \href{https://topology.pi-base.org/spaces/S000095}{Example 95}
 which is asserted to be compact and Hausdorff is automatically tagged
-as fully \(T_4\). 
+as fully \(T_4\). A video introduction to the pi-Base presented at the
+52nd Spring Conference on Topology and Dynamics may be
+watched at \url{https://youtu.be/iuNZWllVDKg?t=3909}.
 
 The database backing the pi-Base is fully open-source and available
 at \url{https://github.com/pi-base/data}.
@@ -54,17 +69,21 @@ which issues pull requests via GitHub for review before merging
 these contributions into the master branch.
 
 Over the years, the pi-Base has grown in popularity,
-as witnessed by its reference on Math.StackExchange 
+as witnessed by its reference/acceptance on Math.StackExchange 
 (e.g. \cite{157918}), mathematical blogs (e.g. \cite{lamb_2018}),
 research presentations (e.g. \cite{clontzPiBase}),
 and lists of online tools for research mathematicians 
-(e.g. \cite{scheepersPiBase}). Part of this interest is sparked
-by the fact that the pi-Base platform is not
-hard-coded to support topology; indeed,
-any mathematical category that can be sufficiently modeled by
-its objects, properties, and theorems could have its own
-pi-Base. 
-\TODO{Add info on who has contacted Dabbs about pi-Base for their field.}
+(e.g. \cite{scheepersPiBase}). However, the community that has
+actively developed its content and software is small, limiting its
+current impact on the field.
+%We believe part of this interest is sparked
+%by the fact that the pi-Base platform is not
+%hard-coded to support topology; indeed,
+%any mathematical category that can be sufficiently modeled by
+%its objects, properties, and theorems could have its own
+%pi-Base. 
+
+\section{Broader Impact}
 
 In addition to its value for experienced researchers, the applicants
 feel that a vibrant pi-Base will have great benefits for 
@@ -77,62 +96,86 @@ can reveal gaps in the peer-reviewed literature, generating truly
 open questions that will often be appropriate for student research.
 This potential is witnessed by its use in the mathematics classroom
 by Austin Mohr of Nebraska Wesleyan \cite{mohrPiBase}, 
-and by its usage in a Summer 2019 REU run by Jocelyn Bell of
-Hobart and William Smith \TODO{cite} in the vein of the original
-\textit{Counterexamples} project mentioned previously.
+and by its usage in an upcoming Summer 2019 REU run by Jocelyn Bell of
+Hobart and William Smith in the vein of the original
+\textit{Counterexamples in Topology} project mentioned previously.
+
+To this end, the proposed workshop will directly involve students,
+with a particular effort made to target underrepresented groups.
+
+\section{Workshop Plan}
 
 Due to these developments, the applicants believe the time is ripe
 for a workshop that will enable the wider adoption of the
 pi-Base as a first-class tool for cutting-edge research in
-general and set-theoretic topology, as well as establish
-a second instance of the pi-Base platform
-modeling another category of mathematics
-\TODO{which?}. We know of no other workshops in this general area.
+general topology, particularly set-theoretic topology and continuum
+theory. Beyond just populating the database with more results from
+these fields, the proposed workshop will develop the software powering
+the pi-Base with the ultimate aim of making it compatible with cataloging
+the other important counterexamples found in other fields of mathematics.
+We know of no other workshops in this general area.
 
-\section{Workshop Plan}
 
 The \href{https://www.aimath.org/research/aimstyle.html}{AIM format}
-will be adhered to for this workshop. The first few talks will be
-designed to orient participants to the current progress of the pi-Base
-project, including the challenges that will be addressed during the workshop.
-Likely topics include the following.
+will be adhered to for this workshop. The applicants aim to achieve
+the following goals.
 
 \begin{itemize}
-    \item The history of cataloging mathematical counterexamples 
-    \item Using and contributing to the pi-Base 
-    \item An overview of the technology powering the pi-Base
-    \item A crash-course in \TODO{outside field} and its parallels to
-      general topology
-    \item Set-theoretic challenges to modeling topology
+    \item Expand the community of active pi-Base contributors by training
+    pi-Base users (researchers and students) to integrate the pi-Base
+    into their workflow outside the context of the workshop.
+    \item Populate the database with more results from the literature
+    based upon the areas of active research that would best benefit
+    from it, with particular attention to areas that could also foster
+    undergraduate and graduate research.
+    \item Develop the software powering the pi-Base, taking advantage
+    of the unique opportunity to do so alongside active users of
+    the platform.
+    \item Identify necessary features to extend the pi-Base platform
+    to model other areas of mathematics.
 \end{itemize}
 
-\noindent Later talks will be chosen based upon the progress made during the
-workshop.
+%The first few talks will be
+%designed to orient participants to the current progress of the pi-Base
+%project, including the challenges that will be addressed during the workshop.
+%Likely topics include the following.
 
-We anticipate the following working groups.
+%\begin{itemize}
+%    \item The history of cataloging mathematical counterexamples 
+%    \item Using and contributing to the pi-Base 
+%    \item An overview of the technology powering the pi-Base
+%    \item A crash-course in \TODO{outside field} and its parallels to
+%      general topology
+%    \item Set-theoretic challenges to modeling topology
+%\end{itemize}
 
-\begin{itemize}
-    \item Content curation: researchers will identify the
-      most useful areas for expansion of the topology database. 
-    \item Student contributions: based upon the literature identified
-      by researchers, students will contribute content to the database,
-      refereed by researchers. 
-    \item Feature requests: which missing features of the pi-Base
-      are most crucial for expanding its utility to researchers of
-      topology and other
-      fields? How can these features be modeled abstractly as to
-      be of use to various fields?
-    \item Reviewing/contribution workflow: how can the pi-Base
-      community facilitate efficient adoption of the platform
-      by more contributors and referees?
-    \item Expansion: begin the process of establishing a pi-Base
-      to model \TODO{external field}.
-    \item Software development: based upon the live usage of the
-      pi-Base by students and researchers in various fields, 
-      developers (with previous experience with mathematical research) 
-      can efficiently
-      implement bugfixes and feature requests.
-\end{itemize}
+%\noindent Later talks will be chosen based upon the progress made during the
+%workshop.
+
+%We anticipate the following working groups.
+
+%\begin{itemize}
+%    \item Content curation: researchers will identify the
+%      most useful areas for expansion of the topology database. 
+%    \item Student contributions: based upon the literature identified
+%      by researchers, students will contribute content to the database,
+%      refereed by researchers. 
+%    \item Feature requests: which missing features of the pi-Base
+%      are most crucial for expanding its utility to researchers of
+%      topology and other
+%      fields? How can these features be modeled abstractly as to
+%      be of use to various fields?
+%    \item Reviewing/contribution workflow: how can the pi-Base
+%      community facilitate efficient adoption of the platform
+%      by more contributors and referees?
+%    \item Expansion: begin the process of establishing a pi-Base
+%      to model \TODO{external field}.
+%    \item Software development: based upon the live usage of the
+%      pi-Base by students and researchers in various fields, 
+%      developers (with previous experience with mathematical research) 
+%      can efficiently
+%      implement bugfixes and feature requests.
+%\end{itemize}
 
 \section{List of Organizers}
 
@@ -146,15 +189,17 @@ collegiate music organizations with their members, recruits, and alumni;
 he currently maintains SbgRails, an open-source platform 
 for facilitating mastery grading in mathematics classrooms. He has
 previously participated in an AIM workshop dedicated to the Curated Courses
-project. His focus is the development of the mathematical content
+project and plans to participate in AIM's Summer 2019 PreTeXT workshop. 
+His focus is the development of the mathematical content
 of the pi-Base platform, including its expansion into other fields.
 
 James Dabbs will serve on the organizing team as the founder of the pi-Base
-and a professional software developer at \TODO{where} 
+and a professional software developer at Procore Technologies 
 with experience with mathematical
 research from his master's thesis in general and algebraic topology.
 He will lead the continued development of the pi-Base software to
-serve its mathematical audiences.
+serve its mathematical audiences along with other experienced software
+developers with mathematical backgrounds.
 
 Lynne Yengulalp is an Associate Professor of Mathematics at the
 University of Dayton. She will serve on the organizing team as an accomplished researcher
@@ -162,9 +207,9 @@ of general topology and set theory, representing the majority of
 the topological research community without software development experience.
 Among her goals is ensuring
 that the user experience of the pi-Base is appropriately designed for
-use by the research community, both for browsing and contributing.
+use by the general research community, both for browsing and contributing.
 
-\TODO{It may make sense to invite an outside researcher as an organizer.}
+%\TODO{It may make sense to invite an outside researcher as an organizer.}
 
 \section{Potential Participants}
 
@@ -180,31 +225,36 @@ outside academia. Organizers are listed in bold.
     \begin{itemize}
         \item \textbf{Steven Clontz} (J), University of South Alabama, Topology
     \end{itemize}
-    \item Topology Researchers
+    \item Mathematical Researchers
     \begin{itemize}
         \item \textbf{Lynne Yengulalp} (F), University of Dayton, Topology
+        \item Lori Alvin (F,J), Furman University, Topology
         \item Jocelyn Bell (F,U,J), Hobart and William Smith Colleges, Topology
         \item Will Brian (J), UNC Charlotte, Topology
+        \item Nathan Carlson, California Lutheran, Topology
+        \item Christopher Caruvana (J), IU Kokomo, Set Theory and Topology
         \item Ziqin Feng, Auburn University, Topology
         \item Jared Holshouser (J), University of South Alabama, Set Theory and Topology
+        \item David Milovich (I), Welkin Sciences, Topology
+        \item Lon Mitchell, Mathematical Reviews
+        \item Ted Porter, Murray State, Topology
+        \item Marion Scheepers, Boise State University, Set Theory
         \item Paul Szeptycki (G), York University, Set Theory and Topology
-        \item \TODO{five more} 
     \end{itemize}
     \item Undergraduate and Graduate Students
     \begin{itemize}
-        \item Six students identified by the topology research team, with a
+        \item Eight students identified by participating researchers, with a
           focus on recruiting women and underrepresented minorities. (F,M,J)
     \end{itemize}
-    \item \TODO{External field, 4 participants}
+%    \item \TODO{External field, 4 participants}
     \item Software Developers 
     \begin{itemize}
-        \item \textbf{James Dabbs} (I), \TODO{TODO}, Topology
-        \item Zachary Sarver (I), \TODO{TODO}, Algebra
-        \item \TODO{1 or 2 more}
+        \item \textbf{James Dabbs} (I), Procore Technologies, Topology
+        \item Daniel Brice (I), Lumi, Algebra
+        \item Evin Sellin (I), Procore Technologies, Computer Science
+        \item Zachary Sarver (I), Vectorworks, Algebra
     \end{itemize}
 \end{itemize}
-
-\TODO{This is 25-26 participants, workshop supports up to 28 so we have flexibility}
 
 \bibliography{mybib}{}
 \bibliographystyle{plain}
