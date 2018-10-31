@@ -6,7 +6,7 @@
 
 \newcommand{\TODO}[1]{\textcolor{red}{(TODO: #1)}}
 
-\subjclass[2010]{54A05}
+%\subjclass[2010]{54A05}
 
 \title{AIM Workshop Proposal for pi-Base}
 %\author{Steven Clontz}
@@ -20,13 +20,17 @@
 
 \section{Historical Context}
 
-In Summer 1967, Lynn Steen and J. Arthur Seebach, Jr. gathered together
+In the summer of 1967, Lynn Steen and J. Arthur Seebach, Jr. gathered together
 an REU of five students to canvas the field of topology and create
-a compilation of topological spaces, properties, and theorems.
+a compilation of topological spaces, properties, and theorems, with particular
+attention to how these spaces serve as counterexamples to the converses of
+known theorems.
 The result of this work was \textit{Counterexamples in Topology} 
-\cite{MR1382863}, which went on to inspire several other texts
-with the same goal of modeling the objects, properties, and theorems of
-their fields \cite{MR0491272,MR1113487,MR930671,MR1256489}.
+\cite{MR1382863}, whose first edition published in 1970 
+went on to inspire several other \textit{Counterexamples}
+texts of the same spirit in other fields, such as graph theory, differential
+equations, probability, and real analysis
+\cite{MR0491272,MR1113487,MR930671,MR1256489}.
 
 In the spirit of these works,
 we propose a web application that can power modern versions
@@ -47,8 +51,9 @@ powerful than a wiki, the pi-Base software features automated
 deduction and self-completion based upon user contributions;
 for example,
 \href{https://topology.pi-base.org/theorems/I000013}{Theorem 13}
-asserts that all compact spaces are paracompact,
-and
+asserts that all compact spaces are paracompact (noting
+that \href{https://topology.pi-base.org/spaces/S000025}{Example 25}
+is a counterexample to the contrary), and
 \href{https://topology.pi-base.org/theorems/I000170}{Theorem 170}
 asserts that all paracompact Hausdorff spaces are fully \(T_4\).
 As a result, a space such as
@@ -64,18 +69,25 @@ For most of its existence, contributions were
 unreferreed, but due to recent work by workshop proposer Steven Clontz
 and his student,
 all assertions in the pi-Base now reference peer-reviewed literature.
-New contributions can be made easily through the pi-Base interface,
-which issues pull requests via GitHub for review before merging 
-these contributions into the master branch.
+New contributions are made through the pi-Base web application, 
+which provides a user-friendly interface abstracting the internal
+mechanics of the Git repository modeling the database.
+Rather than using the Git revision control system directly, users
+are provided with a wiki-like interface allowing them to make their
+contributions via a web browser, and then click a button which automates 
+the process of issuing a ``pull request''
+on GitHub.com allowing for these changes to be reviewed by the community
+before being merged with the other accepted contributions.
 
 Over the years, the pi-Base has grown in popularity,
-as witnessed by its reference/acceptance on Math.StackExchange 
+as witnessed by its reference on Math.StackExchange 
 (e.g. \cite{157918}), mathematical blogs (e.g. \cite{lamb_2018}),
 research presentations (e.g. \cite{clontzPiBase}),
 and lists of online tools for research mathematicians 
 (e.g. \cite{scheepersPiBase}). However, the community that has
-actively developed its content and software is small, limiting its
-current impact on the field.
+actively developed its content and software is small in comparison
+to the number of users that visit the pi-Base; more work needs to be
+done to convert more of these visitors into contributors. 
 %We believe part of this interest is sparked
 %by the fact that the pi-Base platform is not
 %hard-coded to support topology; indeed,
@@ -85,17 +97,20 @@ current impact on the field.
 
 \section{Broader Impact}
 
-In addition to its value for experienced researchers, the applicants
-feel that a vibrant pi-Base will have great benefits for 
+While an important goal of the pi-Base is to serve as a convenient
+tool for experienced researchers, 
+a vibrant pi-Base will also have great benefits for 
 undergraduate and graduate students in the each field it models.
 Indeed, we anticipate that much of the
 data entry from the existing peer-reviewed literature
-will rely on contributions from such students, who will need to
-peruse this content nonetheless. In addition, a completed pi-Base
-can reveal gaps in the peer-reviewed literature, generating truly
-open questions that will often be appropriate for student research.
-This potential is witnessed by its use in the mathematics classroom
-by Austin Mohr of Nebraska Wesleyan \cite{mohrPiBase}, 
+will rely on contributions from such students.
+In addition, a completed pi-Base
+will reveal gaps in the peer-reviewed literature, generating truly
+open questions that will often be appropriate for student research;
+for example, witnessing the absence of a counterexample in the literature
+for the converse of a theorem cataloged in the pi-Base.
+This potential is witnessed by the use of the pi-Base in an undergraduate
+topology course instructed by Austin Mohr of Nebraska Wesleyan \cite{mohrPiBase}, 
 and by its usage in an upcoming Summer 2019 REU run by Jocelyn Bell of
 Hobart and William Smith in the vein of the original
 \textit{Counterexamples in Topology} project mentioned previously.
@@ -105,8 +120,7 @@ with a particular effort made to target underrepresented groups.
 
 \section{Workshop Plan}
 
-Due to these developments, the applicants believe the time is ripe
-for a workshop that will enable the wider adoption of the
+The time is ripe for a workshop that will enable the wider adoption of the
 pi-Base as a first-class tool for cutting-edge research in
 general topology, particularly set-theoretic topology and continuum
 theory. Beyond just populating the database with more results from
@@ -179,17 +193,17 @@ the following goals.
 
 \section{List of Organizers}
 
-Steven Clontz will serve as the lead organizer. Dr. Clontz is an Assistant
+Steven Clontz will serve as the lead organizer. Clontz is an Assistant
 Professor of Mathematics at the University of South Alabama who specializes
 in the area of topological game theory and serves as the mathematical editor
 for the pi-Base. 
 Clontz has extensive experience with software development, having
 previously collaborated with Dabbs on an online CRM platform for connecting
 collegiate music organizations with their members, recruits, and alumni;
-he currently maintains SbgRails, an open-source platform 
+he currently develops SbgRails, an open-source platform 
 for facilitating mastery grading in mathematics classrooms. He has
 previously participated in an AIM workshop dedicated to the Curated Courses
-project and plans to participate in AIM's Summer 2019 PreTeXT workshop. 
+project and will participate in AIM's Summer 2019 PreTeXT workshop. 
 His focus is the development of the mathematical content
 of the pi-Base platform, including its expansion into other fields.
 
@@ -197,16 +211,15 @@ James Dabbs will serve on the organizing team as the founder of the pi-Base
 and a professional software developer at Procore Technologies 
 with experience with mathematical
 research from his master's thesis in general and algebraic topology.
-He will lead the continued development of the pi-Base software to
+Dabbs will lead the continued development of the pi-Base software to
 serve its mathematical audiences along with other experienced software
 developers with mathematical backgrounds.
 
 Lynne Yengulalp is an Associate Professor of Mathematics at the
-University of Dayton. She will serve on the organizing team as an accomplished researcher
-of general topology and set theory, representing the majority of
-the topological research community without software development experience.
-Among her goals is ensuring
-that the user experience of the pi-Base is appropriately designed for
+University of Dayton. Yengulalp will serve on the organizing team as an accomplished researcher
+of general topology, representing the end-users of the pi-Base outside
+its software development team.
+Among her goals is ensuring that the pi-Base is appropriately designed for
 use by the general research community, both for browsing and contributing.
 
 %\TODO{It may make sense to invite an outside researcher as an organizer.}
@@ -229,28 +242,28 @@ outside academia. Organizers are listed in bold.
     \begin{itemize}
         \item \textbf{Lynne Yengulalp} (F), University of Dayton, Topology
         \item Lori Alvin (F,J), Furman University, Topology
-        \item Jocelyn Bell (F,U,J), Hobart and William Smith Colleges, Topology
+        \item Jocelyn Bell (F,J,U), Hobart and William Smith Colleges, Topology
         \item Will Brian (J), UNC Charlotte, Topology
         \item Nathan Carlson, California Lutheran, Topology
-        \item Christopher Caruvana (J), IU Kokomo, Set Theory and Topology
+        \item Christopher Caruvana (J,M), IU Kokomo, Set Theory and Topology
         \item Ziqin Feng, Auburn University, Topology
         \item Jared Holshouser (J), University of South Alabama, Set Theory and Topology
         \item David Milovich (I), Welkin Sciences, Topology
-        \item Lon Mitchell, Mathematical Reviews
+        \item Lon Mitchell, American Mathematical Society, Mathematical Reviews
         \item Ted Porter, Murray State, Topology
         \item Marion Scheepers, Boise State University, Set Theory
         \item Paul Szeptycki (G), York University, Set Theory and Topology
     \end{itemize}
     \item Undergraduate and Graduate Students
     \begin{itemize}
-        \item Eight students identified by participating researchers, with a
-          focus on recruiting women and underrepresented minorities. (F,M,J)
+        \item Several students studying under participating faculty will participate,
+          with a focus on recruiting women and underrepresented minorities. (F,J,M)
     \end{itemize}
 %    \item \TODO{External field, 4 participants}
     \item Software Developers 
     \begin{itemize}
         \item \textbf{James Dabbs} (I), Procore Technologies, Topology
-        \item Daniel Brice (I), Lumi, Algebra
+%        \item Daniel Brice (I), Lumi, Algebra
         \item Evin Sellin (I), Procore Technologies, Computer Science
         \item Zachary Sarver (I), Vectorworks, Algebra
     \end{itemize}
